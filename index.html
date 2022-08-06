@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rafee Ali</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headerlogo"> <a href="" class="hl"> Rafee Ali </a></div>
+        <div class="links">
+            <span class="hlink"><a href="" class="hl">Header Link 1 </a> </span>
+            <span class="hlink"><a href="" class="hl">Header Link 2 </a> </span>
+            <span class="hlink"><a href="" class="hl">Header Link 3 </a> </span>
+        </div>
+    </div>
+
+
+    <div class="section1"> 
+        <div class="s1Text">
+            <h1 class="s1h1"> Here are a few photos </h1>
+            <h4 class="s1h4"> This is some text, about the Beauty that is Thanos <br> apple sucks</h4>
+        </div>
+        <div class="s1imgDiv">
+            <img src="https://wallpaperaccess.com/full/1959166.jpg" alt="Something" class="s1img">
+            <img src="https://timmyhomegoods.com/wp-content/uploads/2021/11/81D-NOtStL._AC_SL1500_-1164x1074.jpg" alt="Something" class="s1img">
+            <img src="https://filmschoolrejects.com/wp-content/uploads/2019/04/Thanos-Smile-2.jpg" alt="Something" class="s1img">
+        </div>
+    </div>
+
+
+    <div class="section2"> 
+        <h1 class="s2h1"> random info 1</h1>
+        <div class="boxes">
+            <div class="box">
+                <div class="b1container">
+                    <img src="https://assets.bonappetit.com/photos/5b9a901947aaaf7cd9ea90f2/3:4/w_1998,h_2665,c_limit/ba-recipe-pasta-al-limone.jpg" alt="Something" class="s2boxing">
+                </div>
+                <span class="s2b1sp"><h5 class="binfo">Pasta</h5></span>
+            </div>
+
+            <div class="box">
+                <div class="b1container">
+                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" alt="Something" class="s2boxing">
+                </div>
+                <span class="s2b1sp"><h5 class="binfo">Pizza</h5></span>
+            </div>
+
+            <div class="box">
+                <div class="b1container">
+                    <img src="https://www.thespruceeats.com/thmb/-YUYSXc4T2H4P8o2JBApzJ3F5rw=/2069x2069/smart/filters:no_upscale()/white-and-red-sauce-lasagna-recipe-995925-hero-1-fb2c2142b39042069f0c50310047256d.jpg" alt="Something" class="s2boxing">
+                </div>
+                <span class="s2b1sp"><h5 class="binfo">Lasgna</h5></span>
+            </div>
+
+            <div class="box">
+                <div class="b1container">
+                    <img src="https://assets.bonappetit.com/photos/61a7d632234db3ec67e4fdfa/1:1/w_2000,h_2000,c_limit/20211122%20Japanese%20Curry%20LEDE.jpg" alt="Something" class="s2boxing">
+                </div>
+                <span class="s2b1sp"><h5 class="binfo">Chicken Curry</h5></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section3"> 
+        <h3 class="s3h3"> This is a qutote</h3>
+        <h4 class="s4"> Wag1 homie I am a bengali</h4>
+    </div>      
+
+
+    <div class="section4"> 
+        <div class="s4box">
+            <div class="s4hs">
+                <h1> Do not press the press me button </h1>
+                <h2> Additional Informational text </h2>
+            </div>
+            <form>
+                <button class="s4btn button-63" formaction="http://instagram.com"role="button"><span class="text">Press Me</span></button>
+            </form>
+        </div>
+    </div>
+    <div class="footer"> Copyright @Rafee Ali 2022 </div>
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("s1img");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+</body>
+</html>
