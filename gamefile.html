@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style2.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style2.css">
 </head>
 <body>
     <div class="header">
@@ -28,20 +31,69 @@
 
 
     <div class="section1"> 
-        <table id="s1table">
+        <div class="s1-list-block">
+            <div class="s1-list-unit all_games">
+                <div class="s1-list-status-title">
+                    <span class="s1-text"> ALL GAMES</span>
+                </div>
+                <div></div>
+                <table class="s1-list-table">
+                    <tbody>
+                        <tr class="s1-list-table-header">
+                            <th class="s1-header-title status"></th>
+                            <th class="s1-header-title number">#</th>
+                            <th class="s1-header-title image"><a class="s1 link hover_info">Image</a></th>
+                            <th class="s1-header-title title"><a href="" class="s1 link sort"> Game Title </a></th>
+                            <th class="s1-header-title score"><a href="">Score</a></th>
+                            <th class="s1-header-title platform"><a href="">Platform</a></th>
+                        </tr>
+                    </tbody>
+                    <tbody class="s1-list-item">
+                        <tr class="s1-list-table-data">
+                            <td class="s1 data status watching"></td>
+                            <td class="s1 data number">1</td>
+                            <td class="s1 data image"><a href="" class="s1 link hover_info"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1617720000" alt=""></a></td>
+                            <td class="s1 data title clearfix" id="title-name"> Grand Theft Auto V </td>
+                            <td class="s1 data score"> 9.5 </td>
+                            <td class="s1 data platform"> PC </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- <table id="s1table">
             <thead>
                 <tr class="list-table-header"> 
                     <th class="header-title number"> # </th>
                     <th class="header-title image"> IMG </th>
                     <th class="header-title title"> Game Title </th>
+                    <th class="header-title score"> Score </th>
                 </tr>
-                
             </thead>
+            <tbody class="list-item">
+                <tr class="list-table-data">
+                    <td class="data number"> 1 </td>
+                    <td class ="data title clearfix"> 
+                        <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V" class="link sort"> Grand Theft Auto V </a> 
+                    </td>
+                    <div class="data-image-container">
+                    <td class="data image"> <a href ="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V">
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1627421000" alt="game image"> 
+                    </a>
+                    
+                    </td>
+                    </div>
 
-        </table>
+                    <td class="data score">
+                        <a href="#" class="link">
+                            <span class="score-label score"> 9.5 </span>
+                        </a>
+                    </td>                    
+            </tbody>
+        </table> -->
     </div>
 
-
+<!-- 
     <div class="section2"> 
         <h1 class="s2h1"> random info 1</h1>
         <div class="boxes">
@@ -66,53 +118,13 @@
                 <span class="s2b1sp"><h5 class="binfo">Lasgna</h5></span>
             </div>
 
-            <div class="box">
-                <div class="b1container">
-                    <img src="https://assets.bonappetit.com/photos/61a7d632234db3ec67e4fdfa/1:1/w_2000,h_2000,c_limit/20211122%20Japanese%20Curry%20LEDE.jpg" alt="Something" class="s2boxing">
-                </div>
-                <span class="s2b1sp"><h5 class="binfo">Chicken Curry</h5></span>
-            </div>
-        </div>
-    </div>
+  -->
 
 
-    <div class="section3"> 
-        <h3 class="s3h3"> This is a qutote hello man</h3>
-        <h4 class="s4"> Wag1 homie I am a bengali</h4>
-    </div>      
 
 
-    <div class="section4"> 
-        <div class="s4box">
-            <div class="s4hs">
-                <h1> Do not press the press me button </h1>
-                <h2> Additional Informational text </h2>
-            </div>
-            <form>
-                <button class="s4btn button-63" formaction="http://instagram.com"role="button"><span class="text">Press Me</span></button>
-            </form>
-        </div>
-    </div>
+
     <div class="footer"> Copyright @Rafee Ali 2022 </div>
-
-
-    <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("s1img");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-        </script>
-
 
 </body>
 </html>
