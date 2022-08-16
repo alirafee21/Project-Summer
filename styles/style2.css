@@ -183,9 +183,9 @@ select {
     width: 90px;
 }
 
-/* .s1-list-table .s1-list-table-data .s1-data.status.reading, .s1-list-table .s1-list-table-data .s1.data.status.watching {
-    background-color: #2db039;
-} */
+.s1-list-table .s1-list-table-data .s1-data.status.reading, .s1-list-table .s1-list-table-data .s1.data.status.watching {
+    background-color: #949494;
+}
 
 .s1-list-table .s1-list-table-data .s1.data.status {
     width: 4px;
