@@ -121,6 +121,13 @@ tr {
     border-color: inherit;
 }
 
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+    border-radius: 15px;
+    background-color: #0080FF;
+}
+
 .s1-list-table .s1-list-table-header .s1-header-title.status {
     background-image: none;
     width: 4px;
@@ -161,7 +168,11 @@ tr {
 .s1-list-table .s1-list-table-header .s1-header-title.title {
     padding-left: 8px;
     text-align: left;
-    width: 567px;
+    width: 500px;
+}
+
+.s1-list-table .s1-list-table-header .s1-header-title.state {
+    width: 65px;
 }
 
 .s1-list-table .s1-list-table-header .s1-header-title.score {
@@ -172,9 +183,9 @@ tr {
     width: 90px;
 }
 
-.s1-list-table .s1-list-table-data .s1-data.status.reading, .s1-list-table .s1-list-table-data .s1.data.status.watching {
+/* .s1-list-table .s1-list-table-data .s1-data.status.reading, .s1-list-table .s1-list-table-data .s1.data.status.watching {
     background-color: #2db039;
-}
+} */
 
 .s1-list-table .s1-list-table-data .s1.data.status {
     width: 4px;

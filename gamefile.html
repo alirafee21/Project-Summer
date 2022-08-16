@@ -44,16 +44,26 @@
                             <th class="s1-header-title number">#</th>
                             <th class="s1-header-title image"><a class="s1 link hover_info">Image</a></th>
                             <th class="s1-header-title title"><a href="" class="s1 link sort"> Game Title </a></th>
+                            <th class="s1-header-title state"><a>Status</a></th>
                             <th class="s1-header-title score"><a href="">Score</a></th>
                             <th class="s1-header-title platform"><a href="">Platform</a></th>
                         </tr>
                     </tbody>
                     <tbody class="s1-list-item">
                         <tr class="s1-list-table-data">
-                            <td class="s1 data status watching"></td>
-                            <td class="s1 data number">1</td>
+                            <td class="s1 data status watching" id="status-color1"></td>
+                            <td class="s1 data number" id="ass">1</td>
                             <td class="s1 data image"><a href="" class="s1 link hover_info"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1617720000" alt=""></a></td>
                             <td class="s1 data title clearfix" id="title-name"> Grand Theft Auto V </td>
+                            <td class="s1 data state" for="status-select">
+                                <select id="status-select" onchange="statusColorChange()">
+                                    <option value="playing">Playing</option>
+                                    <option value="completed">Completed</option>
+                                    <option value="on-hold">On Hold</option>
+                                    <option value="dropped">Dropped</option>
+                                    <option value="plan-to-play">Plan to Play</option>
+                                </select>
+                            </td>
                             <td class="s1 data score"> 9.5 </td>
                             <td class="s1 data platform"> PC </td>
                         </tr>
@@ -125,6 +135,6 @@
 
 
     <div class="footer"> Copyright @Rafee Ali 2022 </div>
-
+    <script src="scripts/gamefile.js"></script>
 </body>
 </html>
